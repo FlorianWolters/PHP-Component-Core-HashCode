@@ -82,6 +82,6 @@ class HashCodeTraitTest extends \PHPUnit_Framework_TestCase
         $expected = $this->traitObject->hashCode();
         $actual = $this->createObjectForTrait()->hashCode();
 
-        $this->assertEquals($expected, $actual);
+        $this->assertNotEquals($expected, $actual);
     }
 }
