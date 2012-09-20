@@ -19,7 +19,7 @@
  !
  ! Author:    Florian Wolters <wolters.fl@gmail.com>
  ! Copyright: 2011-2012 Florian Wolters
- ! License:   http://gnu.org/licenses/lgpl.txt GNU LGPL
+ ! License:   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  ! Link:      http://github.com/FlorianWolters/PHP-Component-Core-HashCode
  !-->
 
@@ -105,28 +105,6 @@
         <log type="testdox-html" target="review/phpunit/testdox.html" />
         <log type="testdox-text" target="review/phpunit/testdox.txt" />
     </logging>
-
-    <!--
-     ! The <selenium> element and its <browser> children can be used configure a
-     ! list of Selenium RC servers.
-     !-->
-    <selenium>
-        <browser name="Mozilla Firefox"
-                 browser="*firefox"
-                 host="127.0.0.1"
-                 port="4444"
-                 timeout="30" />
-        <browser name="Google Chrome"
-                 browser="*chrome"
-                 host="127.0.0.1"
-                 port="4444"
-                 timeout="30" />
-        <browser name="Internet Explorer"
-                 browser="*iexplore"
-                 host="127.0.0.1"
-                 port="4444"
-                 timeout="30" />
-    </selenium>
 
     <!--
      ! The <php> element and its children can be used to configure PHP settings,
