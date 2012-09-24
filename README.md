@@ -8,7 +8,7 @@
 
 This component is inspired by the method [`java.lang.Object.hashCode`][26] of the [Java][27] programming language.
 
-The component consists of three artifacts:
+**FlorianWolters\Component\Core\HashCode** consists of two artifacts:
 
 1. The interface `FlorianWolters\Component\Core\HashCodeInterface`.
 2. The trait `FlorianWolters\Component\Core\HashCodeTrait` which provides a default hash code value implementation for objects.
@@ -26,13 +26,16 @@ It is suggested to use the trait `HashCodeTrait` if the [PHP][17] version is equ
         * [PHP Mess Detector (PHPMD)][18]: Code Analyzer
         * [phpcpd][4]: Copy/Paste Detector (CPD)
         * [phpdcd][5]: Dead Code Detector (DCD)
-* Installable via [Composer][3] or [PEAR installer][11]:
+* Installable via [Composer][3] or the [PEAR command line installer][11]:
     * Provides a [Packagist][25] package which can be installed using the dependency manager [Composer][3].
-        * Click [here][24] for the package on [Packagist][25].
+
+      Click [here][24] for the package on [Packagist][25].
     * Provides a [PEAR package][13] which can be installed using the package manager [PEAR installer][11].
-        * Click [here][9] for the [PEAR channel][12].
+
+      Click [here][9] for the [PEAR channel][12].
 * Provides a complete Application Programming Interface (API) documentation generated with the documentation generator [ApiGen][2].
-    * Click [here][1] for the current API documentation.
+
+  Click [here][1] for the current API documentation.
 * Follows the [PSR-0][6] requirements for autoloader interoperability.
 * Follows the [PSR-1][7] basic coding style guide.
 * Follows the [PSR-2][8] coding style guide.
@@ -73,7 +76,7 @@ If you are creating a component that relies on **FlorianWolters\Component\Core\H
 ```json
 {
     "require": {
-        "florianwolters/component-core-hashcode": "0.1.*"
+        "florianwolters/component-core-hashcode": "0.1.*@beta"
     }
 }
 ```
@@ -107,15 +110,13 @@ The most important usage rule:
 
 #### Using the default implementation
 
-```php
-```
+<https://github.com/FlorianWolters/PHP-Component-Core-HashCode/blob/master/src/docs/HashCodeDefaultImpl.php>
 
 #### Using a custom implementation
 
-In the following example the default implementation (using the global function `\spl_object_hash`) is overwritten with a custom implementation (for a *Value Object*, in this case a person).
+In the following example the default implementation (using the global function `\spl_object_hash`) is overwritten with a custom implementation. The custom implementation fulfills the design contract for a *Value Object*.
 
-```php
-```
+<https://github.com/FlorianWolters/PHP-Component-Core-HashCode/blob/master/src/docs/HashCodeCustomImpl.php>
 
 ## Development Environment
 
@@ -148,26 +149,50 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
 
 [1]: http://blog.florianwolters.de/PHP-Component-Core-HashCode
+     "FlorianWolters\Component\Core | Application Programming Interface (API) documentation"
 [2]: http://apigen.org
+     "ApiGen | API documentation generator for PHP 5.3.+"
 [3]: http://getcomposer.org
+     "Composer"
 [4]: https://github.com/sebastianbergmann/phpcpd
+     "sebastianbergmann/phpcpd · GitHub"
 [5]: https://github.com/sebastianbergmann/phpdcd
+     "sebastianbergmann/phpdcd · GitHub"
 [6]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+     "PSR-0 requirements for autoloader interoperability"
 [7]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
+     "PSR-1 basic coding style guide"
 [8]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+     "PSR-2 coding style guide"
 [9]: http://pear.florianwolters.de
+     "PEAR channel of Florian Wolters"
 [10]: http://pear.php.net
+      "PEAR - PHP Extension and Application Repository"
 [11]: http://pear.php.net/manual/en/guide.users.commandline.cli.php
+      "Manual :: Command line installer (PEAR)"
 [12]: http://pear.php.net/manual/en/guide.users.concepts.channel.php
+      "Manual :: PEAR Channels"
 [13]: http://pear.php.net/manual/en/guide.users.concepts.package.php
+      "Manual :: PEAR Packages"
 [14]: http://pear.php.net/package/PHP_CodeSniffer
+      "PHP_CodeSniffer"
 [15]: http://phing.info
+      "Phing"
 [16]: https://github.com/stuartherbert/phix4componentdev
+      "stuartherbert/phix4componentdev · GitHub"
 [17]: http://php.net
+      "PHP: Hypertext Preprocessor"
 [18]: http://phpmd.org
+      "PHPMD - PHP Mess Detector"
 [19]: http://phpunit.de
+      "sebastianbergmann/phpunit · GitHub"
 [20]: http://semver.org
+      "Semantic Versioning"
 [24]: http://packagist.org/packages/florianwolters/component-core-hashcode
+      "florianwolters/component-core-hashcode - Packagist"
 [25]: http://packagist.org
+      "Packagist"
 [26]: http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()
+      "Object (Java Platform SE 7)"
 [27]: http://java.com
+      "java.com: Java + You"
