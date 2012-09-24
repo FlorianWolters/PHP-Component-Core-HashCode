@@ -4,8 +4,8 @@ use FlorianWolters\Component\Core\HashCodeTrait;
 
 /**
  * Demonstrates the usage of a custom hash code value implementation by
- * overriding the method {@link HashCodeTrait::hashCode} of the trait
- * {@link HashCodeTrait}.
+ * overriding the method {@link HashCodeTrait::hashCode} of the trait {@link
+ * HashCodeTrait}.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2012 Florian Wolters
