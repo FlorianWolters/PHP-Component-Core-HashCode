@@ -10,15 +10,13 @@ This component is inspired by the method [`java.lang.Object.hashCode`][26] of th
 
 **FlorianWolters\Component\Core\HashCode** consists of two artifacts:
 
-1. The interface `FlorianWolters\Component\Core\HashCodeInterface`.
-2. The trait `FlorianWolters\Component\Core\HashCodeTrait` which provides a default hash code value implementation for objects.
-
-It is suggested to use the trait `HashCodeTrait` if the [PHP][17] version is equal or greater than 5.4.0.
+1. The interface [`FlorianWolters\Component\Core\HashCodeInterface`][29]: Indicates that an implementing class provides a hash code value for objects.
+2. The trait [`FlorianWolters\Component\Core\HashCodeTrait`][30]: Provides a default hash code value implementation for objects.
 
 ## Features
 
-* The `HashCodeTrait::hashCode` method implements a default hash code value implementation for objects (Refer to the section [Usage](#using-the-default-implementation) below for an example).
-* The default hash code value implementation can be replaced by overriding the public method `HashCodeTrait::hashCode` in the class using the trait `HashCodeTrait` (Refer to the section [Usage](#using-a-custom-implementation) below for an example).
+* Offers a default hash code value implementation for objects via the method `hashCode` of the trait [`FlorianWolters\Component\Core\HashCodeTrait`][29]. Refer to the section [Usage](#using-the-default-implementation) below for an example.
+* Allows to create a custom hash code value implementation by implementing the interface [`FlorianWolters\Component\Core\HashCodeInterface`][30], more precisely implementing the public method `hashCode` of that interface. Refer to the section [Usage](#using-a-custom-implementation) below for an example.
 * Artifacts tested with both static and dynamic test procedures:
     * Dynamic component tests (unit tests) implemented using [PHPUnit][19].
     * Static code analysis performed using the following tools:
@@ -43,8 +41,27 @@ It is suggested to use the trait `HashCodeTrait` if the [PHP][17] version is equ
 
 ## Requirements
 
-* [PHP][17] >= 5.3.0
-* [PHP][17] >= 5.4.0 to use the trait `HashCodeTrait`
+* [PHP][17] >= 5.4
+
+## Usage
+
+The best documentation for **FlorianWolters\Component\Core\HashCode** are the unit tests, which are shipped in the package. You will find them installed into your [PEAR][10] repository, which on Linux systems is normally `/usr/share/php/test`.
+
+The most important usage rule:
+
+> Always implement the interface [`HashCodeInterface`][29] if using the trait [`HashCodeTrait`][30], since that allows [Type Hinting][31].
+
+### Examples
+
+The class [`HashCodeExample`](src/docs/HashCodeExample.php) can be run via the command `php src/docs/HashCodeExample.php` from the root of the project.
+
+#### Using the default implementation
+
+The class [`HashCodeDefaultImpl`](src/tests/mocks/FlorianWolters/Mock/HashCodeDefaultImpl.php) uses the default implementation of the trait `FlorianWolters\Component\Core\HashCodeTrait`. The trait uses the global function [`\spl_object_hash`][28] to calculate the hash code for the object.
+
+#### Using a custom implementation
+
+The class [`HashCodeCustomImpl`](src/tests/mocks/FlorianWolters/Mock/HashCodeCustomImpl.php) implements a custom implementation, which fulfills the design contract for a *Value Object*. The value of the object is used to calculate the hash code for the object.
 
 ## Installation
 
@@ -76,7 +93,7 @@ If you are creating a component that relies on **FlorianWolters\Component\Core\H
 ```json
 {
     "require": {
-        "florianwolters/component-core-hashcode": "0.1.*@beta"
+        "florianwolters/component-core-hashcode": "0.2.*"
     }
 }
 ```
@@ -91,32 +108,12 @@ If you are creating a component that relies on **FlorianWolters\Component\Core\H
     <package>
       <name>HashCode</name>
       <channel>pear.florianwolters.de</channel>
-      <min>0.1.0</min>
-      <max>0.1.99</max>
+      <min>0.2.0</min>
+      <max>0.2.99</max>
     </package>
   </required>
 </dependencies>
 ```
-
-## Usage
-
-The best documentation for **FlorianWolters\Component\Core\HashCode** are the unit tests, which are shipped in the package. You will find them installed into your [PEAR][10] repository, which on Linux systems is normally `/usr/share/php/test`.
-
-The most important usage rule:
-
-> Always implement the interface `HashCodeInterface` if using the trait `HashCodeTrait`.
-
-### Examples
-
-#### Using the default implementation
-
-<https://github.com/FlorianWolters/PHP-Component-Core-HashCode/blob/master/src/docs/HashCodeDefaultImpl.php>
-
-#### Using a custom implementation
-
-In the following example the default implementation (using the global function `\spl_object_hash`) is overwritten with a custom implementation. The custom implementation fulfills the design contract for a *Value Object*.
-
-<https://github.com/FlorianWolters/PHP-Component-Core-HashCode/blob/master/src/docs/HashCodeCustomImpl.php>
 
 ## Development Environment
 
@@ -196,3 +193,11 @@ You should have received a copy of the GNU Lesser General Public License along w
       "Object (Java Platform SE 7)"
 [27]: http://java.com
       "java.com: Java + You"
+[28]: http://php.net/function.spl-object-hash
+      "PHP: spl_object_hash - Manual"
+[29]: src/php/FlorianWolters/Component/Core/HashCodeInterface.php
+      "FlorianWolters\Component\Core\HashCodeInterface"
+[30]: src/php/FlorianWolters/Component/Core/HashCodeTrait.php
+      "FlorianWolters\Component\Core\HashCodeTrait"
+[31]: http://php.net/language.oop5.typehinting
+      "PHP: Type Hinting - Manual"
