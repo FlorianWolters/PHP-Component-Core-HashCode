@@ -15,8 +15,8 @@ This component is inspired by the method [`java.lang.Object.hashCode`][26] of th
 
 ## Features
 
-* Offers a default hash code value implementation for objects via the method `hashCode` of the trait [`FlorianWolters\Component\Core\HashCodeTrait`][29]. Refer to the section [Usage](#using-the-default-implementation) below for an example.
-* Allows to create a custom hash code value implementation by implementing the interface [`FlorianWolters\Component\Core\HashCodeInterface`][30], more precisely implementing the public method `hashCode` of that interface. Refer to the section [Usage](#using-a-custom-implementation) below for an example.
+* Offers a default hash code value implementation for objects via the method `hashCode` of the trait [`FlorianWolters\Component\Core\HashCodeTrait`][30]. Refer to the section [Usage](#using-the-default-implementation) below for an example.
+* Allows to create a custom hash code value implementation by implementing the interface [`FlorianWolters\Component\Core\HashCodeInterface`][29], more precisely implementing the public method `hashCode` of that interface. Refer to the section [Usage](#using-a-custom-implementation) below for an example.
 * Artifacts tested with both static and dynamic test procedures:
     * Dynamic component tests (unit tests) implemented using [PHPUnit][19].
     * Static code analysis performed using the following tools:
@@ -57,7 +57,7 @@ The class [`HashCodeExample`](src/docs/HashCodeExample.php) can be run via the c
 
 #### Using the default implementation
 
-The class [`HashCodeDefaultImpl`](src/tests/mocks/FlorianWolters/Mock/HashCodeDefaultImpl.php) uses the default implementation of the trait `FlorianWolters\Component\Core\HashCodeTrait`. The trait uses the global function [`\spl_object_hash`][28] to calculate the hash code for the object.
+The class [`HashCodeDefaultImpl`](src/tests/mocks/FlorianWolters/Mock/HashCodeDefaultImpl.php) uses the default implementation of the trait [`HashCodeTrait`][30]. The trait uses the global function [`\spl_object_hash`][28] to calculate the hash code for the object.
 
 #### Using a custom implementation
 
