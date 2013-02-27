@@ -2,12 +2,10 @@
 namespace FlorianWolters\Mock;
 
 use FlorianWolters\Component\Core\HashCodeInterface;
-use FlorianWolters\Component\Core\HashCodeTrait;
 
 /**
  * Demonstrates the usage of a custom hash code value implementation by
- * overriding the method {@see HashCodeTrait::hashCode} of the trait {@see
- * HashCodeTrait}.
+ * implementing the method {@see HashCodeInterface::hashCode}.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2012-2013 Florian Wolters
