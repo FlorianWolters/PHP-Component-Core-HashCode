@@ -41,7 +41,7 @@ accessLevels:
     - public
     - protected
 internal: no
-php: no
+php: yes
 tree: yes
 deprecated: no
 todo: no
