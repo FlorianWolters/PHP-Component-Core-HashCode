@@ -108,7 +108,7 @@ If you are creating a component that relies on **FlorianWolters\Component\Core\H
     <package>
       <name>HashCode</name>
       <channel>pear.florianwolters.de</channel>
-      <min>0.2.0</min>
+      <min>0.2.1</min>
       <max>0.2.99</max>
     </package>
   </required>

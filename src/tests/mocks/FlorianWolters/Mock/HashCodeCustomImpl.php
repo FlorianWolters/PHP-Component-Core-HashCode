@@ -33,11 +33,7 @@ class HashCodeCustomImpl implements HashCodeInterface
     }
 
     /**
-     * Returns a hash code value for this object.
-     *
      * {@inheritdoc}
-     *
-     * @return string The hash code value.
      */
     final public function hashCode()
     {

@@ -1,6 +1,6 @@
 {
     "name": "florianwolters/component-core-hashcode",
-    "description": "Provides a hash code value for objects.",
+    "description": "Provides a hash code value for objects as a PHP component.",
     "type": "library",
     "keywords": ["hash", "object", "language"],
     "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-HashCode",
