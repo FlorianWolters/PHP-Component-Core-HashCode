@@ -2,7 +2,7 @@
     "name": "florianwolters/component-core-hashcode",
     "description": "Provides a hash code value for objects as a PHP component.",
     "type": "library",
-    "keywords": ["hash", "object", "language"],
+    "keywords": ["hash code", "hash", "object", "language", "core"],
     "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-HashCode",
     "license": "LGPL-3.0+",
     "authors": [
@@ -16,12 +16,25 @@
     "require": {
         "php": ">=5.4"
     },
+    "require-dev": {
+        "pdepend/pdepend": "2.*",
+        "phpmd/phpmd": "2.*",
+        "phpunit/phpunit": "4.*",
+        "sami/sami": "2.*",
+        "sebastian/phpcpd": "2.*",
+        "sebastian/phpdcd": "1.*",
+        "satooshi/php-coveralls": "0.*@dev",
+        "sensiolabs/security-checker": "1.*",
+        "squizlabs/php_codesniffer": "2.*@dev"
+    },
     "autoload": {
-        "psr-0": {
-            "FlorianWolters": [
-                "src/php",
-                "src/tests/mocks"
-            ]
+        "psr-4": {
+            "FlorianWolters\\Component\\Core\\": "src/main/php"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FlorianWolters\\Example\\": "src/test/resources"
         }
     }
 }

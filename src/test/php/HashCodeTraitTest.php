@@ -1,16 +1,22 @@
 <?php
+/**
+ * FlorianWolters\Component\Core\HashCodeTraitTest
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-HashCode
+ */
+
 namespace FlorianWolters\Component\Core;
 
 /**
  * Test class for {@see HashCodeTrait}.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-HashCode
- * @since     Class available since Release 0.1.0
- *
- * @covers    FlorianWolters\Component\Core\HashCodeTrait
+ * @since  Class available since Release 0.1.0
+ * @covers FlorianWolters\Component\Core\HashCodeTrait
  */
 class HashCodeTraitTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,4 +1,15 @@
 <?php
+/**
+ * FlorianWolters\Component\Core\HashCodeTrait
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-HashCode
+ */
+
 namespace FlorianWolters\Component\Core;
 
 /**
@@ -8,11 +19,7 @@ namespace FlorianWolters\Component\Core;
  * {@see HashCodeTrait}, since that allows {@link
  * http://php.net/language.oop5.typehinting Type Hinting}.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-HashCode
- * @since     Trait available since Release 0.1.0
+ * @since Trait available since Release 0.1.0
  */
 trait HashCodeTrait
 {
