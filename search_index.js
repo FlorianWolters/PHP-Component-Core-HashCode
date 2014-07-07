@@ -1,0 +1,7 @@
+var search_data = {
+    'index': {
+        'searchIndex': ["florianwolters","florianwolters\\component","florianwolters\\component\\core","florianwolters\\component\\core\\hashcodeinterface","florianwolters\\component\\core\\hashcodetrait","florianwolters\\component\\core\\hashcodeinterface::hashcode","florianwolters\\component\\core\\hashcodetrait::hashcode"],
+        'info': [["FlorianWolters","","FlorianWolters.html","","",3],["FlorianWolters\\Component","","FlorianWolters\/Component.html","","",3],["FlorianWolters\\Component\\Core","","FlorianWolters\/Component\/Core.html","","",3],["HashCodeInterface","FlorianWolters\\Component\\Core","FlorianWolters\/Component\/Core\/HashCodeInterface.html","","The interface {@see HashCodeInterface} indicates that",1],["HashCodeTrait","FlorianWolters\\Component\\Core","FlorianWolters\/Component\/Core\/HashCodeTrait.html","","The trait {@see HashCodeTrait} provides a hash code",1],["HashCodeInterface::hashCode","FlorianWolters\\Component\\Core\\HashCodeInterface","FlorianWolters\/Component\/Core\/HashCodeInterface.html#method_hashCode","()","Returns a hash code value for this object.",2],["HashCodeTrait::hashCode","FlorianWolters\\Component\\Core\\HashCodeTrait","FlorianWolters\/Component\/Core\/HashCodeTrait.html#method_hashCode","()","Returns a hash code value for this object.",2]]
+    }
+}
+search_data['index']['longSearchIndex'] = search_data['index']['searchIndex']
